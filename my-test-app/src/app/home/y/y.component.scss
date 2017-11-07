@@ -1,0 +1,176 @@
+@import "../../variables";
+div.y{
+        width:$width1;
+        height:350px;
+        background:$darkgray1;
+        padding-top:70px;
+        overflow: hidden;
+        div.y1{
+            @include pos-dis;
+            width:$width1/4;
+            height:$height1;
+            float:left;
+            img{
+                height:50px;
+                width:200px;
+                margin-left:40px;
+                margin-bottom:40px;
+            }
+            p{
+                text-align:left;
+                font-size:20px;
+                color:$lightgray3;
+                margin-left:40px;
+            }
+        }
+        div.y2{
+            @include pos-dis;
+            width:$width1/4;
+            height:$height1;
+            float:left;
+            h2{
+                text-align:left;
+                font-size:24px;
+                color:$lightgray3;
+                margin-left:40px;
+            }
+            p{
+                text-align:left;
+                font-size:20px;
+                margin-top:10px;
+                margin-left:40px;
+                a{
+                    color:$lightgray3;
+                    display:block;
+                    }
+            }
+        }
+        div.y3{
+            @include pos-dis;
+            width:$width1/4;
+            height:$height1;
+            float:left;
+            h2{
+                text-align:left;
+                font-size:24px;
+                color:$lightgray3;
+                margin-left:40px;
+            }
+            p{
+                text-align:left;
+                font-size:20px;
+                color:$lightgray3;
+                margin-left:40px;
+                margin-top:10px;
+            }
+        }
+        div.y4{
+            @include pos-dis;
+            width:$width1/4;
+            height:$height1;
+            float:left;
+            div.y41{
+                @include pos-dis;
+                width:$width1;
+                height:20%;
+                float:left;
+                h2{
+                    text-align:left;
+                    font-size:24px;
+                    color:$lightgray3;
+                    margin-left:40px;
+                }
+            }
+            div.y42{
+                @include pos-dis;
+                width:$width1;
+                height:50%;
+                float:left;
+                div.y421{
+                    @include pos-dis;
+                    @include y_xxx-style;
+                    div.y4211{
+                        @include pos-dis;
+                        @include y_xxxx1-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4212{
+                        @include pos-dis;
+                        @include y_xxxx1-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4213{
+                        @include pos-dis;
+                        @include y_xxxx1-style;
+                        img{
+                             @include foto2_style;
+                        }
+                    }
+                }
+                div.y422{
+                    @include pos-dis;
+                    @include y_xxx-style;
+                    div.y4221{
+                        @include pos-dis;
+                        @include y_xxxx2-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4222{
+                        @include pos-dis;
+                        @include y_xxxx2-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4223{
+                        @include pos-dis;
+                        @include y_xxxx2-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4224{
+                        @include pos-dis;
+                        @include y_xxxx2-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                }
+                div.y423{
+                    @include pos-dis;
+                    @include y_xxx-style;
+                    div.y4231{
+                        @include pos-dis;
+                        @include y_xxxx1-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4232{
+                        @include pos-dis;
+                        @include y_xxxx1-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                    div.y4233{
+                        @include pos-dis;
+                        @include y_xxxx1-style;
+                        img{
+                            @include foto2_style;
+                        }
+                    }
+                }
+                
+                
+            }
+        }
+    }
+    
