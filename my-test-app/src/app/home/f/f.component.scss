@@ -1,0 +1,141 @@
+ @import "../../variables";
+ div.f{
+        @include pos-dis;
+        width:$width1;
+        height:700px;
+        background-image:$back-img;
+        overflow: hidden;
+        div.f1{
+            @include pos-dis;
+            width:$width1;
+            height:$height1/2;
+            float:left;
+            img{
+                height:150px;
+                width:150px;
+                margin-left:600px;
+                margin-top:50px;
+            }
+            h2{
+                @include font1-style($size:20px);
+                margin-top:20px;
+            }
+        }
+        div.f2{
+            div.f21{
+                @include pos-dis;
+                width:$width1/2;
+                height:$height1;
+                float:left;
+                
+                div.f211{
+                    @include pos-dis;
+                    @include f_xxx-style;
+                div.f2111{
+                    @include pos-dis;
+                    width:$width1+(-10%);
+                    height:$height1;
+                    float:left;
+                    p{
+                       @include f_font-style;
+                    }
+                }
+                div.f2112{
+                    @include pos-dis;
+                    @include f_xxxx-style;
+                    }
+                }
+                div.f212{
+                    @include pos-dis;
+                    @include f_xxx-style;
+                    div.f2121{
+                        @include pos-dis;
+                        width:$width1+(-20%);
+                        height:$height1;
+                        float:left;
+                        p{
+                            @include f_font-style;
+                        }
+                    }
+                    div.f2122{
+                        @include pos-dis;
+                        @include f_xxxx-style($width:20%);}
+                }
+                div.f213{
+                    @include pos-dis;
+                    @include f_xxx-style;
+                    div.f2131{
+                        @include pos-dis;
+                        width:$width1+(-30%);
+                        height:$height1;
+                        float:left;
+                        p{
+                            @include f_font-style;
+                        }
+                    }
+                    div.f2132{
+                        @include pos-dis;
+                        @include f_xxxx-style($width:30%);
+                    }
+                }
+            }
+            div.f22{
+                @include pos-dis;
+                width:$width1/2;
+                height:$height1;
+                float:left;
+                div.f221{
+                    @include pos-dis;
+                    @include f_xxx-style;
+                div.f2211{
+                    @include pos-dis;
+                    width:$width1+(-3%);
+                    height:$height1;
+                    float:left;
+                    p{
+                        @include f_font-style;
+                    }
+                }
+                div.f2212{
+                    @include pos-dis;
+                    @include f_xxxx-style($width:3%);
+                    }
+                }
+                div.f222{
+                    @include pos-dis;
+                    @include f_xxx-style;
+                    div.f2221{
+                        @include pos-dis;
+                        width:$width1+(-25%);
+                        height:$height1;
+                        float:left;
+                        p{
+                            @include f_font-style;
+                        }
+                    }
+                    div.f2222{
+                        @include pos-dis;
+                        @include f_xxxx-style($width:25%);
+                    }
+                }
+                div.f223{
+                    @include pos-dis;
+                    @include f_xxx-style;
+                    div.f2231{
+                        @include pos-dis;
+                        width:$width1+(-30%);
+                        height:$height1;
+                        float:left;
+                        p{
+                            @include f_font-style;
+                        }
+                    }
+                    div.f2232{
+                        @include pos-dis;
+                        @include f_xxxx-style($width:30%);
+                    }
+                }
+            }
+        
+        }
+    }
