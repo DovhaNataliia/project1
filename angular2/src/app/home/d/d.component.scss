@@ -1,0 +1,99 @@
+@import "../../variables";
+div.d{
+        @include pos-dis;
+        width:$width1;
+        height:1705px;
+        background-image:$back-img;
+        overflow: hidden;
+        div.d1{
+            @include pos-dis;
+            width:$width1;
+            height:$height2_d/2;
+            padding-left:300px;
+            padding-right:300px;
+            padding-top:100px;
+             
+            
+                img{ 
+                
+                height:100px;
+                weight:100px;
+                margin-left:350px;
+                    
+            }
+            }
+        div.d2{
+            @include pos-dis;
+            width:$width1;
+            height:$height2_d+(-295px);
+            }
+            h3{@include font1-style;
+                
+                }
+        div.d3{
+            @include pos-dis;
+            width:$width1;
+            height:$height2_d;
+            div.d311{
+                @include d_xxx-style;
+                
+            }
+            div.d31{
+                @include d_xx-style;
+                
+                
+                
+                
+                img{
+                    @include foto2_style;
+
+                    
+                
+            }}
+            
+            div.d312{
+                @include d_xxx-style;
+            }
+        }
+        div.d4{
+            @include pos-dis;
+            width:$width1;
+            height:$height2_d;
+             div.d411{
+                @include d_xxx-style;
+                
+            }
+            div.d41{
+                @include d_xx-style;
+                img{
+                    @include foto2_style;
+                }
+            }
+            
+            div.d412{
+                @include d_xxx-style;
+            }
+            
+        }
+        div.d5{
+            @include pos-dis;
+            width:$width1;
+            height:$height2_d;
+             div.d511{
+                @include d_xxx-style;
+                
+            }
+            div.d51{
+                @include d_xx-style;
+                img{
+                    @include foto2_style;
+                }
+            }
+            
+            div.d512{
+                @include d_xxx-style;
+            }
+           
+        }
+        div.d6{}
+    }

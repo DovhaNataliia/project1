@@ -1,0 +1,81 @@
+@import "../../variables";
+
+@mixin pos-dis($position:relative,$display:block){
+    position:$position;
+    display:$display;
+}
+@mixin foto-style($display:block,$width:50%,$height:50%,$background-size:contain,$background-repeat:no-repeat){
+    display:$display;
+    width:$width;
+    height:$height;
+    background-size:$background-size;
+    background-repeat:$background-repeat;
+}
+
+header{
+    @include pos-dis;
+    width:$width1;
+    height:130px;
+    overflow:hidden;
+    
+    div.a1{
+        width:$width1;
+        height:30px;
+        background:$pink1;
+        padding-left:60px;
+        div{
+            @include pos-dis;
+            height:$height1;
+            width:20px;
+            float:left;
+            margin-left:10px;
+        }
+       
+        
+    }
+
+     div.a2{
+        @include pos-dis;
+        width:$width1;
+        height:100px;
+        background:$white1;
+        
+        
+        div.a21{
+            width:$width1/4;
+            height:$height1;
+            float:left;
+            padding-top:20px;
+            padding-left:30px;
+            .foto{
+                 background-image: url(../../../assets/images/new-logo-site.png);
+                @include foto-style;
+                
+            }
+            
+        }
+
+        div.a22{
+            @include pos-dis;
+            width:$width1+(-30%);
+            height:$height1;
+            float:left;
+            ul{
+                overflow:hidden;
+                margin:0 auto;
+                li{
+                    float:left;
+                    list-style-type:none;
+                    a{
+                        color:$black1;
+                        display:block;
+                        padding:30px 15px;
+                        text-decoration:none;
+                    }
+                }
+            }
+        }
+    
+}
+
+}
