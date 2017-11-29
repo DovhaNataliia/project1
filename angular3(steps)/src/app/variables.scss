@@ -1,0 +1,87 @@
+$pink1:#DA1C5C;
+$black1:black;
+$white1:white;
+$whitedarker:rgb(247,247,247);
+$darkgray1:#262727;
+$darkgray2:#363839;
+$lightgray1:rgb(114,112,112);
+$lightgray2:rgb(116,116,116);
+$lightgray3:rgb(200,200,200);
+$lightgray4:rgb(230,230,230);
+$purple1:#905fa1;
+$width1:100%;
+$height1:100%;
+$height2_d:400px;
+$back-img:url(../../../assets/images/home-cor.jpg);
+@mixin pos-dis($position:relative,$display:block){
+    position:$position;
+    display:$display;
+}
+@mixin foto-style($display:block,$width:50%,$height:50%,$background-size:contain,$background-repeat:no-repeat){
+    display:$display;
+    width:$width;
+    height:$height;
+    background-size:$background-size;
+    background-repeat:$background-repeat;
+}
+@mixin foto2_style($display:block,$width:100%,$height:100%,$background-size:cover){
+    display:$display;
+    width:$width;
+    height:$height;
+    background-size:$background-size;
+}
+
+@mixin font1-style($align:center,$size:25px,$color:$white1,$weight:600){
+    text-align:$align;
+    font-size:$size;
+    color:$color;
+    font-weight:$weight;
+}
+@mixin d_xxx-style($width: 8%,$height:$height1,$float:left){
+    width:$width;
+    height:$height;
+    float:$float;
+}
+@mixin d_xx-style($width: 28%,$height:$height1,$float:left){
+    width:$width;
+    height:$height;
+    float:$float;
+}
+@mixin f_xxx-style($width:600px, $height:40px, $background:$lightgray3, $radius:10px, $margin:10px,$marginl:10px){
+    width:$width;
+    height:$height;
+    background:$background;
+    border-radius:$radius;
+    margin-bottom:$margin;
+    margin-left:$marginl;
+}
+@mixin f_xxxx-style($width:10%,$height:100%,$background:$lightgray4,$float:left,$border-bottom-right-radius:10px,$border-top-right-radius: 10px){
+    width:$width;
+    height:$height;
+    background:$background;
+    float:$float;
+    border-bottom-right-radius:$border-bottom-right-radius;
+    border-top-right-radius: $border-top-right-radius;
+}
+@mixin f_font-style($align:left,$size:18px,$color:$lightgray2,$top:7px,$left:10px){
+    text-align:$align;
+    font-size:$size;
+    color:$color;
+    margin-top:$top;
+    margin-left:$left;
+}
+@mixin y_xxx-style($width:$width1+(-20%), $height:$height1/3, $float:left){
+    width:$width;
+    height:$height;
+    float:$float;
+}
+@mixin y_xxxx1-style($width:$width1/3, $height:$height1, $float:left){
+    width:$width;
+    height:$height;
+    float:$float;
+}
+@mixin y_xxxx2-style($width:$width1/4, $height:$height1, $float:left){
+    width:$width;
+    height:$height;
+    float:$float;
+}

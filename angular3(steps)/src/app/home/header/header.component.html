@@ -1,0 +1,23 @@
+<header>
+            <div class="a1">
+                <div *ngFor='let block of headerBlock'><a href=""><img src="{{block.image}}"></a>
+                </div>
+                
+               
+            </div>
+        <div class="a2">
+                <div class="a21">
+                    <div class="foto"></div>
+                </div>
+
+                <div class="a22">
+                    <ul >
+                     <li><a routerLink="/login">Login</a></li>
+                     <li><a routerLink="/home">Home</a></li>
+                     <li><a routerLink="/registration">Registration</a></li>
+                     <li *ngFor='let block1 of header1Block'><a href="{{block1.href}}"><p>{{block1.title}}</p></a></li>   
+                    
+                    </ul>
+                </div>
+            </div>
+            </header>

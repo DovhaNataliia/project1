@@ -1,0 +1,54 @@
+@import "../../variables";
+div.c{
+        @include pos-dis;
+        width:$width1;
+        height:500px;
+        background:$whitedarker;
+        overflow:hidden;
+        div.c1{
+            width:$width1/2;
+            height:$height1;
+            padding-top:40px;
+            float:left;
+            h3{
+                text-align:left;
+                margin-left:100px;
+                margin-right:20px;
+                font-size:40px;
+                font-weight:500;
+                color:$lightgray1;
+            }
+            p{
+                text-align:left;
+                margin-left:100px;
+                margin-right:20px;
+                margin-top:40px;
+                font-size:18px;
+                color:$lightgray2;
+                font-weight:normal;
+            }
+            
+            a{
+                padding:10px;
+                background:$pink1;
+                color:$white1;
+                text-align:center;
+                display:block;
+                width:95px;
+                position:absolute;
+                left:100px;
+                top:350px;
+            }
+            
+        }
+        div.c2{
+            width:$width1/2;
+            height:$height1;
+            padding-top:130px;
+            float:left;
+            img{
+                width:$width1+(-25%);
+            }
+        }
+        
+    }
