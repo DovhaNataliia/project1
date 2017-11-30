@@ -1,0 +1,58 @@
+<form  #bookingForm="ngForm">
+  <div>
+    <div class="input">
+    <label>Booking day:</label>
+    <div class="datepicker">
+    <dp-date-picker name="bookingday" required  [(ngModel)]="booking.bookingday" #bookingday="ngModel"></dp-date-picker>
+    <div *ngIf="bookingday.errors && (bookingday.dirty || bookingday.touched)" class="alert alert-danger" >
+      <div [hidden]="!bookingday.errors.required">Required!</div>
+    </div>
+    </div>
+  </div>
+  </div>
+  <div>
+   <div class="input">
+  
+  <label>Booking time:</label>
+  <input type="radio" id="contactChoice1"
+     name="bookingtime" value="morning"  required [(ngModel)]="booking.bookingtime" #bookingtime="ngModel">
+  <p for="contactChoice1">Morning</p>
+
+    <input type="radio" id="contactChoice2"
+     name="bookingtime" value="afternoon" required [(ngModel)]="booking.bookingtime" #bookingtime="ngModel">
+    <p for="contactChoice2">Afternoon</p>
+
+    <input type="radio" id="contactChoice3"
+     name="bookingtime" value="evening" required [(ngModel)]="booking.bookingtime" #bookingtime="ngModel">
+    <p for="contactChoice3">Evening</p>
+    <input type="radio" id="contactChoice4"
+     name="bookingtime" value="night"  required [(ngModel)]="booking.bookingtime" #bookingtime="ngModel">
+    <p for="contactChoice4">Night</p>
+ <div *ngIf="bookingtime.errors && (bookingtime.dirty || bookingtime.touched)" class="alert alert-danger">
+  <div [hidden]="!bookingtime.errors.required">
+   Required!
+  </div>
+  </div>
+</div>
+</div>
+<div>
+  <div class="input">
+  <label>№ of people:</label>
+  <input type="number" name='people' required pattern="([0-9]|[1][0])" [(ngModel)]="booking.people" #people="ngModel">
+  <div *ngIf="people.errors && (people.dirty || people.touched)" class="alert alert-danger">
+  <div [hidden]="!people.errors.required">
+   Required!
+  </div>
+  <div [hidden]="!people.errors.pattern">
+  № is incorrect! № should be between 0-10!
+  </div>
+  </div>
+  </div>
+  </div>
+ 
+  <div>
+  <div class="input">
+  <button [disabled]="!bookingForm.form.valid" (click)="savebooking()">Save</button>
+  </div>
+  </div>
+  </form>
